@@ -1,0 +1,19 @@
+{
+  "name": "editorial-blog-platform",
+  "version": "1.0.0",
+  "description": "Full-stack modern editorial blogging platform with comments, PostgreSQL, Prisma, Express, and React 18",
+  "scripts": {
+    "backend:install": "npm --prefix backend install",
+    "frontend:install": "npm --prefix frontend install",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "backend:dev": "npm --prefix backend run dev",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "db:push": "npm --prefix backend run prisma:push",
+    "db:seed": "npm --prefix backend run prisma:seed",
+    "db:generate": "npm --prefix backend run prisma:generate",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build"
+  },
+  "keywords": ["blog", "editorial", "react", "express", "prisma", "postgresql", "tailwindcss"],
+  "author": "The Chronicle Team",
+  "license": "ISC"
+}
